@@ -1,0 +1,5 @@
+访问localhost:8080/druid
+用户名：admin
+密码：admin
+
+druid源码地址:https://github.com/alibaba/druid

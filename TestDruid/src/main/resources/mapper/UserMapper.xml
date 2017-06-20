@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiabin.TestDruid.mapper.UserMapper">
+
+    <select id="getUserInfo" parameterType = "com.xiabin.TestDruid.vo.UserInfoRequest"
+            resultType = "com.xiabin.TestDruid.vo.UserInfoResponse">
+      SELECT * FROM user WHERE username = #{username} AND password = #{password}
+    </select>
+
+</mapper>
+
