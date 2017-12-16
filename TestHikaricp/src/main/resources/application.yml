@@ -1,0 +1,16 @@
+mybatis:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+spring:
+  datasource:
+    url: jdbc:mysql://IP/testbackups?useSSL=false&serverTimezone=UTC
+    username: username
+    password: ENC(encryptedPassword)
+    hikari:
+      max-lifetime: 1765000
+      maximum-pool-size: 15
+    driver-class-name: com.mysql.cj.jdbc.Driver
+jasypt:
+  encryptor:
+    password: foo
+
+
